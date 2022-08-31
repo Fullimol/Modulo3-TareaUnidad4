@@ -12,10 +12,22 @@
 </head>
 
 <body>
+    <form action="">
+        <textarea name="" id="texto" 30" rows="10"></textarea><br>
+        <button>contar caracteres</button>
+    </form>
+
 
     <script>
+        // const texto = document.getElementById("area").innerHTML;
+        // alert("El tamaño del párrafo es de " + texto.length + " caracteres");
+        const texto = document.getElementById('texto');
 
-
+        texto.addEventListener('input', function(e) {
+            const target = e.target;
+            const longitudAct = target.value.length;
+            alert(contador.innerHTML = longitudAct)
+        });
     </script>
 </body>
 
